@@ -1,11 +1,11 @@
 version: '3'
 services:
   nginx:
-    image: bastienawade/4dvop-app:nginx-hub-4dvop
+    image: bastienawade/4dvop:nginx
     ports:
       - "8080:8080"
   haproxy:
-    image: bastienawade/4dvop-app:haproxy-hub-4dvop
+    image: bastienawade/4dvop:haproxy
     ports:
       - "80:80"
     depends_on:
